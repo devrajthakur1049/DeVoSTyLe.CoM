@@ -1,20 +1,25 @@
 {
-  "name": "fullpackege",
+  "name": "devostyle",
   "version": "1.0.0",
   "description": "",
-  "license": "ISC",
-  "author": "devraj",
-  "type": "commonjs",
   "main": "index.js",
- "scripts": {
-  "install": "cd Backend && npm install && cd ../Frontend && npm install",
-  "dev:server": "cd Backend && npm run dev",
-  "dev:client": "cd Frontend && npm start",
-  "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
-  "build": "cd Frontend && npm run build"
-},
-  
-  "dependencies": {
-    "concurrently": "^10.0.3"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run dev --prefix Backend\" \"npm start --prefix frontend\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devrajthakur1049/DeVoSTyLe.CoM.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/devrajthakur1049/DeVoSTyLe.CoM/issues"
+  },
+  "homepage": "https://github.com/devrajthakur1049/DeVoSTyLe.CoM#readme",
+  "devDependencies": {
+    "concurrently": "^10.0.4"
   }
 }
