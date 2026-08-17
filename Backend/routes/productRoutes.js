@@ -3,11 +3,11 @@ const router = express.Router();
 
 
 const { getAllProducts, getProductById, createProduct, updateProduct, deleteProduct } = require('../controllers/productController');
-const { protect } = require('../middleware/authMiddleware');
+const { protect } = require('../middleware/authmiddleware');
 const { admin } = require('../middleware/adminmiddleware');
 const multer = require('multer');
 const upload = multer({ dest: 'uploads/' }); // Tem
- 
+
 
 
 
