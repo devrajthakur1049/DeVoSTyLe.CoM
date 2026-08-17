@@ -1,5 +1,5 @@
 const orderModel = require("../models/orderModel");
-const sendEmail = require("../utils/sendEmail");
+const sendEmail = require("../utils/sendemail");
 
 // Create Order
 const createOrder = async (req, res) => {
@@ -106,7 +106,7 @@ const updateOrderStatus = async (req, res) => {
       return res.status(404).json({ message: "Order not found" });
     }
 
-    
+
 
     order.status = req.body.status;
 
